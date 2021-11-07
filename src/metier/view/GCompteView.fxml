@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="545.0" prefWidth="744.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="metier.controller.GCompteViewController">
+   <children>
+      <BorderPane layoutX="141.0" layoutY="56.0" prefHeight="364.0" prefWidth="744.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #EDD1AC;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="626.0">
+                     <children>
+                        <Label layoutX="29.0" layoutY="22.0" prefHeight="35.0" prefWidth="264.0" text="Gestion Compte Bancaire" textFill="#ff9204">
+                           <font>
+                              <Font name="Ink Free" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="49.0" layoutY="50.0" prefHeight="35.0" prefWidth="224.0" text="Le 09/11/2021" textFill="#ff9000">
+                           <font>
+                              <Font name="Ink Free" size="22.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+                  <Pane layoutX="132.0" layoutY="10.0" prefHeight="100.0" prefWidth="626.0">
+                     <children>
+                        <Label layoutX="125.0" layoutY="24.0" prefHeight="35.0" prefWidth="135.0" text="Realiser Par">
+                           <font>
+                              <Font name="Ink Free" size="22.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="136.0" layoutY="59.0" prefHeight="35.0" prefWidth="159.0" text="Aaouad Kamal" textFill="#f88e02">
+                           <font>
+                              <Font name="Ink Free" size="22.0" />
+                           </font>
+                        </Label>
+                     </children></Pane>
+               </children>
+            </HBox>
+         </top>
+         <bottom>
+            <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #EDD1AC;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="100.0" prefWidth="259.0" />
+                  <Pane prefHeight="100.0" prefWidth="242.0">
+                     <children>
+                        <Label layoutX="38.0" layoutY="33.0" prefHeight="24.0" prefWidth="162.0" text="aaouad@hotmail.org" textFill="#f54e00">
+                           <font>
+                              <Font name="Ink Free" size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="17.0" layoutY="57.0" prefHeight="17.0" prefWidth="204.0" text="CopyRight © 2021 by myCompany" textFill="#f20000" />
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="100.0" prefWidth="256.0" />
+               </children></HBox>
+         </bottom>
+         <left>
+            <VBox prefHeight="164.0" prefWidth="114.0" style="-fx-background-color: #FBCD93;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="153.0" prefWidth="149.0">
+                     <children>
+                        <Button contentDisplay="CENTER" layoutX="8.0" layoutY="65.0" mnemonicParsing="false" onAction="#onAddCompte" prefHeight="30.0" prefWidth="98.0" style="-fx-background-color: #5ebda2;" text="Add Compte" textAlignment="CENTER" textFill="#3b3737fb">
+                           <font>
+                              <Font name="David Libre Regular" size="15.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button contentDisplay="CENTER" layoutX="8.0" layoutY="78.0" mnemonicParsing="false" onAction="#onVerserMontant" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: #608db5;" text="Verser" textAlignment="CENTER" textFill="#1a1a1afb">
+                           <font>
+                              <Font name="David Libre Bold" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </left>
+         <right>
+            <VBox prefHeight="164.0" prefWidth="121.0" style="-fx-background-color: #FBCD93;" BorderPane.alignment="CENTER">
+               <children>
+                  <Pane prefHeight="178.0" prefWidth="121.0">
+                     <children>
+                        <Button contentDisplay="CENTER" layoutX="8.0" layoutY="66.0" mnemonicParsing="false" onAction="#onRetirerMontant" prefHeight="30.0" prefWidth="105.0" style="-fx-background-color: #608db5;" text="Retirer" textAlignment="CENTER">
+                           <font>
+                              <Font name="David Libre Regular" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </Button>
+                     </children>
+                  </Pane>
+                  <Pane prefHeight="200.0" prefWidth="200.0">
+                     <children>
+                        <Button contentDisplay="CENTER" layoutX="9.0" layoutY="77.0" mnemonicParsing="false" onAction="#onVirementClicked" prefHeight="30.0" prefWidth="104.0" style="-fx-background-color: #b55965;" text="Virement" textAlignment="CENTER">
+                           <font>
+                              <Font name="David Libre Regular" size="17.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <effect>
+                              <Blend />
+                           </effect>
+                        </Button>
+                     </children>
+                  </Pane>
+               </children>
+            </VBox>
+         </right>
+         <center>
+            <TableView fx:id="tableCompte" prefHeight="345.0" prefWidth="480.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="colCode" prefWidth="130.0" text="Code" />
+                <TableColumn fx:id="colSalaire" prefWidth="168.0" text="Salaire" />
+                  <TableColumn fx:id="colDate" prefWidth="210.0" text="Date de creation" />
+              </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
